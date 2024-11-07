@@ -1,0 +1,52 @@
+{
+  "name": "@web3bot/egg-mongodb",
+  "version": "1.0.2",
+  "description": "",
+  "eggPlugin": {
+    "name": "mongodb"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "mongodb": "^6.10.0"
+  },
+  "devDependencies": {
+    "egg": "^3",
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "app.js",
+    "config",
+    "lib"
+  ],
+  "ci": {
+    "version": "16, 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web3bot-shop/egg-mongodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web3bot-shop/egg-mongodb/issues"
+  },
+  "homepage": "https://github.com/web3bot-shop/egg-mongodb",
+  "author": "",
+  "license": "MIT"
+}
